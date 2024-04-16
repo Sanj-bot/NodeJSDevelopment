@@ -3,13 +3,12 @@ const app=express();
 const bop=require('body-parser');
 const port=process.env.PORT||8080;
 
-app.use(bop.urlencoded({extended:true}))
 
+app.use(bop.urlencoded({extended:true}))
 
 
 app.get('/user',(req,res)=>{
     res.sendFile(__dirname+'/public/index.html');
-
 });
 
 // users is the endpoint
