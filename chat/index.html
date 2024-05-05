@@ -1,8 +1,37 @@
+
+
+
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>iChat-Realtime Node Socket.io</title>
-    </head>
 
+<head>
+    <title>iChat-Realtime Node Socket.io</title>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer  src="js/client.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <img class="logo" src="chat.png" alt="">
+        <h1>welcome to iChat!!</h1>
+    </nav>
+
+    <div class="container">
+        <!-- all messages shown here -->
+        
+        
+    </div>
+    <div class="send">
+        <form action="#" id="send-container">
+            <input type="text" name="messageInp" id="messageInp">
+            <button class="btn"type=submit">Send
+            </button>
+        </form>
+    </div>
+
+</body>
 
 </html>
+
+<!-- frontend working on 5500 port -->
